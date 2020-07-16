@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Momentum</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="aligner">
+        <div class="aligner-item">
+             <div class="js-clock">
+                    <h1>00:00</h1>
+                </div>
+            <div class="textalign">
+                <form class="js-form form">
+                    <input type="text" placeholder="이름을 알려주세요!" />
+                </form>
+                <h4 class="js-greetings greetings"></h4>
+                <form class="js-toDoForm">
+                    <input type="text" placeholder="해야 할 것을 적어주세요!" />
+                </form>
+                <ul class="js-toDoList">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="weather">
+        <spanc class="js-weather"></spanc>
+    </div>
+    <div class="button">
+        <div class="button_details">
+            <button class="button1" onClick="window.localStorage.removeItem(`currentUser`), window.location.reload()">이름 초기화 </button><br>
+            <button class="button2" onClick="window.location.reload()">페이지 새로고침 [F5]</button>
+        </div>
+    </div>
+    <div class="madeby">
+        <h4>Made By HyeonU</h4>
+    </div>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html> 
